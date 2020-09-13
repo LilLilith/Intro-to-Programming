@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPL++OD0fM+0lp0Y5dsh1PH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LilLilith/Intro-to-Programming/blob/master/Week%203%20Assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FWUXMul53yE9",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "for loop in range (5):\n",
+        "  print (\"Hello World\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sJ6OXF_331jg",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "NUMBER1 = int(input(\"Enter your first number:\"))\n",
+        "NUMBER2 = int(input(\"Enter your second number:\"))\n",
+        "if NUMBER1 < NUMBER2:\n",
+        "  print (\"Your first number is lower than your second number\")\n",
+        "  print (NUMBER1)\n",
+        "else:\n",
+        "  print (\"Your second number is lower than your first number\")\n",
+        "  print (NUMBER2)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "u2boJsv7313q",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "NUMBER1 = int(input(\"Enter your first number:\"))\n",
+        "NUMBER2 = int(input(\"Enter your second number:\"))\n",
+        "NUMBER3 = int(input(\"Enter your third number:\"))\n",
+        "if NUMBER1 < NUMBER2 and NUMBER2 < NUMBER3:\n",
+        "  print (NUMBER2)\n",
+        "if NUMBER2 < NUMBER1 and NUMBER1 < NUMBER3:\n",
+        "  print (NUMBER1)\n",
+        "if NUMBER1 < NUMBER3 and NUMBER3 < NUMBER2:\n",
+        "  print (NUMBER3)\n",
+        "if NUMBER1 > NUMBER2 and NUMBER2 > NUMBER3:\n",
+        "  print (NUMBER2)\n",
+        "if NUMBER2 > NUMBER1 and NUMBER1 > NUMBER3:\n",
+        "  print (NUMBER1)\n",
+        "if NUMBER1 > NUMBER3 and NUMBER3 > NUMBER2:\n",
+        "  print (NUMBER3)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7NeTAdRZ4D33",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def is_it_even(number):\n",
+        "  if(number % 2 == 0):\n",
+        "    return True\n",
+        "  else:\n",
+        "    return False\n",
+        "\n",
+        "OUTPUT=0\n",
+        "INPUT=[]\n",
+        "for loop in range (5):\n",
+        "  INPUT.append(int(input(\"Please write a number:\")))\n",
+        "if is_it_even(INPUT[0]):\n",
+        "  OUTPUT = OUTPUT + 1\n",
+        "if is_it_even(INPUT[1]):\n",
+        "  OUTPUT = OUTPUT + 1  \n",
+        "if is_it_even(INPUT[2]):\n",
+        "  OUTPUT = OUTPUT + 11  \n",
+        "if is_it_even(INPUT[3]):\n",
+        "  OUTPUT = OUTPUT + 1\n",
+        "if is_it_even(INPUT[4]):\n",
+        "  OUTPUT = OUTPUT + 1\n",
+        "print(\"This many numbers were even:\")\n",
+        "print(OUTPUT)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Rnf61Ojx31_W",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "NUMBER = 6\n",
+        "print(\"I am thinking of a number between 1 and 30\")\n",
+        "GUESS = 0\n",
+        "\n",
+        "while GUESS != NUMBER:\n",
+        "  print(\"Try to guess my number\")\n",
+        "  GUESS = int(input())\n",
+        "\n",
+        "  if GUESS < NUMBER:\n",
+        "    print('Your guess is too low.')\n",
+        "  elif GUESS > NUMBER:\n",
+        "    print('Your guess is too high.')\n",
+        "  else:\n",
+        "    break \n",
+        "\n",
+        "if GUESS == NUMBER:\n",
+        "  print(\"You guessed my number\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
